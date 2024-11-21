@@ -1,6 +1,7 @@
 # PremLive  
 
-Welcome to **PremLive**, your one-stop platform for all things Premier League ! Stay informed with real-time scores, standings, match results, and upcoming fixtures, all in a sleek and modern design.  
+Welcome to **PremLive**, your one-stop platform for all things Premier League.
+Stay informed with real-time scores, standings, match results, and upcoming fixtures, all in a sleek and modern design.  
 
 ---
 
