@@ -1,14 +1,17 @@
-#Welcome to PremLive 
-A sleek and modern platform for all things Premier League ! 
-Stay informed with live scores, standings, recent results, and upcoming fixtures, all in one place.
+# PremLive  
 
-#Features
-Live Scores: Get real-time updates on ongoing matches.
-Upcoming Fixtures: View the schedule for upcoming games and plan ahead.
-Recent Results: Catch up on games you missed with results at your fingertips.
-League Standings: Track your favorite team's position in the Premier League table.
+Welcome to **PremLive**, your one-stop platform for all things Premier League ! Stay informed with real-time scores, standings, match results, and upcoming fixtures, all in a sleek and modern design.  
 
-#Technologies Used
-Frontend: HTML, CSS, JavaScript
-API Integration: Live football data to keep the platform up-to-date
+---
 
+## 📋 **Features**  
+- **Live Scores**: Real-time updates on ongoing matches.  
+- **Upcoming Fixtures**: Check out the schedule for upcoming games.  
+- **Recent Results**: Catch up on recent matches with results.  
+- **League Standings**: Stay updated on the Premier League table.  
+
+---
+
+## 🛠️ **Technologies Used**  
+- **Frontend**: HTML, CSS, JavaScript    
+- **API Integration**: Real-time football data for up-to-date information
