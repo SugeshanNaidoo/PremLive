@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="shortcut icon" href="imgs/1.png" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .error-container {
+            text-align: center;
+            padding: 3rem 1.5rem; /* Reduced padding for smaller sizes */
+        }
+
+        .error-container h1 {
+            font-size: 4rem; /* Slightly smaller */
+            color: #37003c;
+            margin-bottom: 0.8rem;
+        }
+
+        .error-container p {
+            font-size: 1.2rem; /* Slightly smaller text */
+            color: #242424;
+            margin-bottom: 1.5rem;
+        }
+
+        .error-container img {
+            width: 100%;
+            max-width: 250px; /* Slightly smaller max-width */
+            height: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .back-home {
+            display: inline-block;
+            padding: 0.6rem 1.5rem; /* Slightly reduced padding */
+            font-size: 0.9rem; /* Smaller button text */
+            color: white;
+            background-color: #37003c;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-home:hover {
+            background-color: #00ff85;
+        }
+    </style>
+</head>
+<body>
+    <main class="error-container">
+        <img src="imgs/404.svg" alt="404 Illustration">
+        <h1>404</h1>
+        <p>Oops! The page you are looking for doesn't exist.</p>
+        <a href="/" class="back-home">Go Back Home</a>
+    </main>
+</body>
+</html>

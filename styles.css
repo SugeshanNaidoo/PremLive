@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #242424;
+    background-color: #fff;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    flex-grow: 1;
+}
+
+.section {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h2 {
+    color: #37003c;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+/* Footer */
+footer {
+    background-color: #37003c;
+    color: white;
+    padding: 2rem 5%;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00ff85;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #37003c;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ff85;
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.burger-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger-icon span:nth-child(1) {
+    top: 0px;
+}
+
+.burger-icon span:nth-child(2) {
+    top: 8px;
+}
+
+.burger-icon span:nth-child(3) {
+    top: 16px;
+}
+
+.burger-icon.active span:nth-child(1) {
+    top: 8px;
+    transform: rotate(45deg);
+}
+
+.burger-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon.active span:nth-child(3) {
+    top: 8px;
+    transform: rotate(-45deg);
+}
+
+/* Custom scrollbar styles for the league table */
+#league-table-data {
+    max-height: 435px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(55, 0, 60, 0.5) rgba(240, 240, 240, 0.3);
+}
+
+#league-table-data::-webkit-scrollbar {
+    width: 8px;
+}
+
+#league-table-data::-webkit-scrollbar-thumb {
+    background-color: rgba(55, 0, 60, 0.7);
+    border-radius: 10px;
+}
+
+#league-table-data::-webkit-scrollbar-track {
+    background: rgba(240, 240, 240, 0.3);
+}
+
+/* Full screen loader */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #37003c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-image {
+    width: 150px;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        flex-grow: 1;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #37003c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 1rem;
+    }
+}
